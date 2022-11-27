@@ -1,0 +1,20 @@
+spring:
+  quartz:
+    scheduler-name: QuartzScheduler
+    auto-startup: true
+    startup-delay: 1s
+    wait-for-jobs-to-complete-on-shutdown: true
+    job-store-type: memory
+    properties:
+      org.quartz.scheduler.instanceName: QuartzScheduler
+      org.quartz.scheduler.instanceId: AUTO
+
+      org.quartz.threadPool.class: org.quartz.simpl.SimpleThreadPool
+      org.quartz.threadPool.threadCount: 100
+
+      org.quartz.jobStore.class: org.quartz.simpl.RAMJobStore
+
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
