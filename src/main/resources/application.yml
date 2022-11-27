@@ -18,3 +18,7 @@ spring:
     exclude:
       - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 
+management:
+  health:
+    redis:
+      enabled: false

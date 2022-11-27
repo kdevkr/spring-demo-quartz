@@ -32,6 +32,9 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.boot:spring-boot-starter-jdbc'
     implementation 'org.postgresql:postgresql'
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+    implementation 'net.javacrumbs.shedlock:shedlock-spring:4.42.0'
+    implementation 'net.javacrumbs.shedlock:shedlock-provider-redis-spring:4.42.0'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
